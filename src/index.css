@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-main: #101D3A;
+  --color-navy-secondary: #1B2B4B;
+  --color-navy-light: #243B66;
+  --color-blue-pale: #C5DFFF;
+  --color-blue-verypale: #EAF3FF;
+  --color-surface-gray: #F5F7FB;
+  --color-soft-green: #DDF5E5;
+  --color-soft-red: #FCE8E8;
+  --color-soft-amber: #FEF3C7;
+}
+
+:root {
+  --navy-main: #101D3A;
+  --navy-secondary: #1B2B4B;
+  --blue-pale: #C5DFFF;
+  --blue-verypale: #EAF3FF;
+  --surface-gray: #F5F7FB;
+}
+
+body {
+  background-color: #F5F7FB;
+  color: #1B2B4B;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Print styles for internship reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
